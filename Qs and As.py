@@ -1,4 +1,4 @@
-06/12/2020
+06/11/2020
 [Question } Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
 
