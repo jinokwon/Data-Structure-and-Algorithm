@@ -1,4 +1,26 @@
 
+06/15/2020 - Insertion Sort & Selection Sort
+* Selection Sort
+def selection_sort(array):
+	sorted_idx = 0
+	while sorted_idx < len(array) - 1:
+		small_idx = sorted_idx
+		for i in range(sorted_idx, len(array)):
+			if array[small_idx] > array[i]:
+				small_idx = i
+		array[sorted_idx], array[small_idx] = array[small_idx], array[sorted_idx]
+		sorted_idx += 1
+	return array
+
+* Insertion Sort
+def insertion_sort(array):
+	for i in range(1, len(array)):
+		while i !=0:
+			if array[i-1] > array[i]:
+				array[i-1], array[i] = array[i], array[i-1]
+			i -= 1
+	return array
+
 06/13/2020
 [Question } Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
