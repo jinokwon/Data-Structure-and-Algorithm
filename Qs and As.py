@@ -1,4 +1,22 @@
 
+06/17/2020 - Find three largest numbers from a list
+* Solution 1
+def findThreeLargestNumbers(array):
+    three_large = [None, None, None]
+    cnt = 2
+    large_list = []
+    while cnt > -1:
+        large = 0
+        for i in range(1, len(array)):
+            if array[i] > array[large] and i not in large_list:
+                large = i
+            large_list.append(large)
+            three_large[cnt] = array[large]
+            cnt -= 1
+    return three_large
+
+------------------------
+
 06/15/2020 - Insertion Sort & Selection Sort
 * Selection Sort
 def selection_sort(array):
