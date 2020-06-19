@@ -1,3 +1,21 @@
+06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
+def threeNumberSum(array, targetSum):
+	array.sort()
+	triple_list = []
+	for i in range(len(array)-2):
+		left = i+1
+		right = len(array) - 1
+		while left < right:
+			current = array[i] + array[left] + array[right]
+			if current == targetSum:
+				triple_list.append([array[i], array[left], array[right]])
+				left += 1
+				right -= 1
+			elif current < targetSum:
+				left += 1
+			elif current > targetSum:
+				right -= 1
+	return triple_list
 
 06/17/2020 - Find three largest numbers from a list
 * Solution 1
