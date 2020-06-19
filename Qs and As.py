@@ -1,5 +1,5 @@
 06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
-def threeNumberSum(array, targetSum):
+def SumofThree(array, targetSum):
 	array.sort()
 	triple_list = []
 	for i in range(len(array)-2):
