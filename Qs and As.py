@@ -6,14 +6,14 @@ def SumofThree(array, targetSum):
 		left = i+1
 		right = len(array) - 1
 		while left < right:
-			current = array[i] + array[left] + array[right]
-			if current == targetSum:
+			current_sum = array[i] + array[left] + array[right]
+			if current_sum == targetSum:
 				triple_list.append([array[i], array[left], array[right]])
 				left += 1
 				right -= 1
-			elif current < targetSum:
+			elif current_sum < targetSum:
 				left += 1
-			elif current > targetSum:
+			elif current_sum > targetSum:
 				right -= 1
 	return triple_list
 
