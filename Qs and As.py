@@ -1,3 +1,12 @@
+06/23/2020 - Write a function that takens in an array and returns all the possible subsets of it.
+def powerset(array):
+	subsets = [[]]
+	for element in array:
+		for i in range(len(subsets)):
+			current_set = subsets[i]
+			subsets.append(current_set + [element])
+	return subsets
+
 06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
 def SumofThree(array, targetSum):
 	array.sort()
