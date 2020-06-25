@@ -26,21 +26,28 @@ def SumofThree(array, targetSum):
 				right -= 1
 	return triple_list
 
+-----------------------------------------------------------
 06/17/2020 - Find three largest numbers from a list
-* Solution 1
 def findThreeLargestNumbers(array):
-    three_large = [None, None, None]
-    cnt = 2
-    large_list = []
-    while cnt > -1:
-        large = 0
-        for i in range(1, len(array)):
-            if array[i] > array[large] and i not in large_list:
-                large = i
-            large_list.append(large)
-            three_large[cnt] = array[large]
-            cnt -= 1
-    return three_large
+	three_large = [None, None, None]
+	for num in array:
+		largest_helper(three_large, num)
+	return three_large
+
+def largest_helper(three_large, num):
+	if three_large[2] is None or num > three_large[2]:
+		update_helper(three_large, num, 2)
+	elif three_large[1] is None or num > three_large[1]:
+		update_helper(three_large, num, 1)
+	elif three_large[0] is None or num > three_large[0]:
+		update_helper(three_large, num, 0)
+
+def update_helper(array, num, idx):
+	for i in range(idx+1):
+		if i == idx:
+			array[i] = num
+		else:
+			array[i] = array[i+1]
 
 ------------------------
 
