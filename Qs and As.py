@@ -1,3 +1,34 @@
+06/25/2020 - Permutations
+def Permutations(array):
+	permute = []
+	permute_helper(0, array, permute)
+	return permute
+
+def permute_helper(i, array, permute):
+	if i == len(array) - 1:
+		permute.append(array[:])
+	else:
+		for j in range(i, len(array)):
+			array[i], array[j] = array[j], array[i]
+			permute_helper(i+1, array, permute)
+			array[j], array[i] = array[i], array[j]
+Explanation:
+i = 0 -- array: [1, 2, 3]			
+	i) j=0 --> i=1 - permut(1, 2, 3) 
+	ii) j=1 --> i=1 - permut(2, 1, 3)
+	iii) j=2 --> i=1 - permut(3, 2, 1)
+i)
+i = 1 -- array: [1, 2, 3]
+	j=1 --> i=2 - permut(1, 2, 3)
+	j=2 --> i=2 - permut(1, 3, 2)
+ii)
+i = 1 -- array: [2, 1, 3]
+	j=1 --> i=2 - permut(2, 1, 3)
+	j=2 --> i=2 - permut(2, 3, 1)
+i = 1 -- array: [3, 2, 1]
+	j=1 --> i=2 - permut(3, 2, 1)
+	j=2 --> i=2 - permut(3, 1, 2)
+----------------------------------------------------------------------------------------------------
 06/23/2020 - Write a function that takens in an array and returns all the possible subsets of it.
 def powerset(array):
 	subsets = [[]]
