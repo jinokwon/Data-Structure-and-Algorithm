@@ -37,7 +37,7 @@ def powerset(array):
 			current_set = subsets[i]
 			subsets.append(current_set + [element])
 	return subsets
-
+----------------------------------------------------------------------------------------------------
 06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
 def SumofThree(array, targetSum):
 	array.sort()
@@ -57,7 +57,7 @@ def SumofThree(array, targetSum):
 				right -= 1
 	return triple_list
 
------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 06/17/2020 - Find three largest numbers from a list
 def findThreeLargestNumbers(array):
 	three_large = [None, None, None]
@@ -80,7 +80,7 @@ def update_helper(array, num, idx):
 		else:
 			array[i] = array[i+1]
 
-------------------------
+----------------------------------------------------------------------------------------------------
 
 06/15/2020 - Insertion Sort & Selection Sort
 * Selection Sort
@@ -103,7 +103,7 @@ def insertion_sort(array):
 				array[i-1], array[i] = array[i], array[i-1]
 			i -= 1
 	return array
-
+----------------------------------------------------------------------------------------------------
 06/13/2020
 [Question } Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
@@ -122,7 +122,7 @@ def caesar(string, key):
  		else:
  			answer.append(num_dict[withKey-26])
  	return " ".join(answer)
-
+----------------------------------------------------------------------------------------------------
 06/11/2020
 [Question } Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
@@ -137,7 +137,7 @@ def is_sub(array, sequence):
  		arr_idx += 1
  	# if the sequence index moved all the way to the last index ('len(sequence)'), it means 'sequence' is a subsequence.
  	return seq_idx == len(sequence)
-
+----------------------------------------------------------------------------------------------------
 06/09/2020
 [Question 1] Write a function for the sum of two numbers
 input : (1) non-empty array of distinct integers and (2) a target sum
