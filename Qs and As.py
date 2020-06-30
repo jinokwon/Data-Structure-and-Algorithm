@@ -1,4 +1,5 @@
 06/25/2020 - Permutations
+[Question 8]
 def Permutations(array):
 	permute = []
 	permute_helper(0, array, permute)
@@ -30,6 +31,7 @@ i = 1 -- array: [3, 2, 1]
 	j=2 --> i=2 - permut(3, 1, 2)
 ----------------------------------------------------------------------------------------------------
 06/23/2020 - Write a function that takens in an array and returns all the possible subsets of it.
+[Question 7]
 def powerset(array):
 	subsets = [[]]
 	for element in array:
@@ -39,6 +41,7 @@ def powerset(array):
 	return subsets
 ----------------------------------------------------------------------------------------------------
 06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
+[Question 6]
 def SumofThree(array, targetSum):
 	array.sort()
 	triple_list = []
@@ -59,6 +62,7 @@ def SumofThree(array, targetSum):
 
 ----------------------------------------------------------------------------------------------------
 06/17/2020 - Find three largest numbers from a list
+[Question 5]
 def findThreeLargestNumbers(array):
 	three_large = [None, None, None]
 	for num in array:
@@ -81,8 +85,8 @@ def update_helper(array, num, idx):
 			array[i] = array[i+1]
 
 ----------------------------------------------------------------------------------------------------
-
 06/15/2020 - Insertion Sort & Selection Sort
+[Question 4]
 * Selection Sort
 def selection_sort(array):
 	sorted_idx = 0
@@ -105,7 +109,7 @@ def insertion_sort(array):
 	return array
 ----------------------------------------------------------------------------------------------------
 06/13/2020
-[Question } Write a function that Finds a subsequence of an array
+[Question 3] Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
 
 [ANS]
@@ -124,7 +128,7 @@ def caesar(string, key):
  	return " ".join(answer)
 ----------------------------------------------------------------------------------------------------
 06/11/2020
-[Question } Write a function that Finds a subsequence of an array
+[Question 2] Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
 
 [ANS]
