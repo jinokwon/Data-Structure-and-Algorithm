@@ -1,3 +1,19 @@
+06/30/2020 - single cycle
+[Question 9]
+def single_cycle(array):
+	num_visited = 0
+	current_idx = 0
+	while num_visited < len(array):
+		if num_visited > 0 and current_idx == 0:
+			return False
+		current_idx = get_idx(array, current_idx)
+		num_visited += 1
+
+def get_idx(array, current_idx):
+	next_idx = (current_idx + array[current_idx]) % len(array)
+	return next_idx
+	
+----------------------------------------------------------------------------------------------------
 06/25/2020 - Permutations
 [Question 8]
 def Permutations(array):
@@ -13,7 +29,7 @@ def permute_helper(i, array, permute):
 			array[i], array[j] = array[j], array[i]
 			permute_helper(i+1, array, permute)
 			array[j], array[i] = array[i], array[j]
-Explanation:
+* Explanation:
 i = 0 -- array: [1, 2, 3]			
 	i) j=0 --> i=1 - permut(1, 2, 3) 
 	ii) j=1 --> i=1 - permut(2, 1, 3)
