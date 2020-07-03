@@ -1,3 +1,9 @@
+07/02/2020
+(Review)
+* Lists are ordered and mutable.
+* tuples are NOT mutable.
+* List vs Deque
+
 06/30/2020 - single cycle
 [Question 9]
 def single_cycle(array):
