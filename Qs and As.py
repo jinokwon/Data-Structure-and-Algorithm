@@ -1,7 +1,8 @@
 07/02/2020
 (Review)
-* Lists are ordered and mutable.
-* tuples are NOT mutable.
+* List vs Tuple
+- Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
+- tuples are NOT mutable.
 * List vs Deque
 - 
 
