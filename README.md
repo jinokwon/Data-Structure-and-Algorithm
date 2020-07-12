@@ -1,3 +1,3 @@
 # Data Structure and Algorithm
 
-This repo will be updated with various coding interview questions and my answers to them.
+This repo is a log of my study in data structure and a couple of my solutions for coding interview questions.
