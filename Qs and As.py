@@ -1,5 +1,8 @@
 07/02/2020
 (Review)
+* Array
+Static vs Dynamic array:
+	Python lists are all dynamic arrays, which means that they automatically manage memory (i.e., when inserting new elements). 
 * List vs Tuple
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
