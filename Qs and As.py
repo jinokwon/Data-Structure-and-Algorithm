@@ -11,6 +11,36 @@ Static vs Dynamic array:
 
 * List vs Deque
 
+07/21/2020 - MinMax Stack
+
+class MinMaxStack:
+	def __init__(self):
+		self.min_max_stack = []
+		self.stack = []
+		
+	def peek(self):
+		return self.stack[-1]
+	
+	def pop(self):
+		self.min_max_stack.pop()
+		return self.stack.pop()
+	
+	def push(self, number):
+		new_min_max = {"min": number, "max": number}
+		if self.min_max_stack:
+			last_min_max = self.min_max_stack[-1]
+			new_min_max["min"] = min(last_min_max["min"], number)
+			new_min_max["max"] = min(last_min_max["max"], number)
+		self.min_max_stack.append(new_min_max)
+		self.stack.append(number)
+	
+	def getMin(self):
+		return self.min_max_stack[-1]["min"]
+	
+	def getMax(self):
+		return self.min_max_stack[-1]["max"]
+	
+
 06/30/2020 - single cycle
 [Question 9]
 def single_cycle(array):
