@@ -9,7 +9,6 @@ Static vs Dynamic array:
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
 
-* List vs Deque
 
 07/21/2020 - MinMax Stack
 
