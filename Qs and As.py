@@ -11,6 +11,7 @@ Static vs Dynamic array:
 
 
 
+
 07/21/2020 - MinMax Stack
 
 class MinMaxStack:
