@@ -1,4 +1,3 @@
-07/02/2020
 (Review)
 * Array
 Static vs Dynamic array:
