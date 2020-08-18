@@ -1,3 +1,4 @@
+[Review]
 * Array
 Static vs Dynamic array:
 - dynamic array : Python lists are all dynamic arrays, which means that they automatically manage memory (i.e., when inserting new elements).
