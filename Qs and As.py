@@ -1,4 +1,7 @@
-[Review]
+[Concept Review]
+* Dictionary
+- Can have a list or a dictionary as a value of an item in a dictionary, but NO for keys of the dictionary ==> Will get a TypeError.
+
 * Array
 Static vs Dynamic array:
 - dynamic array : Python lists are all dynamic arrays, which means that they automatically manage memory (i.e., when inserting new elements).
