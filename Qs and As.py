@@ -11,8 +11,8 @@ Static vs Dynamic array:
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
 
+* 
 
-07/21/2020 - MinMax Stack
 
 class MinMaxStack:
 	def __init__(self):
