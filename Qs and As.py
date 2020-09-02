@@ -11,6 +11,21 @@ Static vs Dynamic array:
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
 
+def selectionSort(array):
+	for i in range(len(array)):
+		smallest = i
+		for j in range(i+1, len(array)):
+			if array[j] < array[smallest]:
+				array[j], array[smallest] = array[smallest], array[j]
+	return array
+
+def insertionSort(array):
+	for i in range(1, len(array)):
+		while i != 0 and array[i] < array[i-1]:
+			array[i], array[i-1] = array[i-1], array[i]
+			i -= 1
+	return array
+		
 class MinMaxStack:
 	def __init__(self):
 		self.min_max_stack = []
