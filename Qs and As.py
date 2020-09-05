@@ -25,12 +25,13 @@ def bubbleSort(sort):
 		       
 
 def selectionSort(array):
-	for i in range(len(array)):
-		smallest = i
-		for j in range(i+1, len(array)):
-			if array[j] < array[smallest]:
-				array[j], array[smallest] = array[smallest], array[j]
-	return array
+    for i in range(len(array)-1):
+	smallest = i
+	for j in range(smallest+1, len(array)):
+		if array[smallest] > array[j]:
+			smallest = j
+	array[smallest], array[i] = array[i], array[smallest]
+    return array
 
 def insertionSort(array):
 	for i in range(1, len(array)):
