@@ -11,6 +11,8 @@ Static vs Dynamic array:
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
 
+* Sorting algorithms
+
 def bubbleSort(sort):
 	count = 0
 	isSorted = False
