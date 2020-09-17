@@ -71,7 +71,6 @@ class MinMaxStack:
 	
 
 06/30/2020 - single cycle
-[Question 9]
 def single_cycle(array):
 	num_visited = 0
 	current_idx = 0
@@ -101,6 +100,7 @@ def permute_helper(i, array, permute):
 			array[i], array[j] = array[j], array[i]
 			permute_helper(i+1, array, permute)
 			array[j], array[i] = array[i], array[j]
+			
 * Explanation:
 i = 0 -- array: [1, 2, 3]			
 	i) j=0 --> i=1 - permut(1, 2, 3) 
