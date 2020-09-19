@@ -11,6 +11,43 @@ Static vs Dynamic array:
 - Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
 - tuples are NOT mutable.
 
+
+* tree construction
+class BST:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+		
+    def insert(self, value):
+        current = self
+		while True:
+			if value < current.value:
+				if current.left is None:
+					current.left = BST(value)
+					break
+				else:
+					current = current.left
+			elif value >= current.value:
+				if current.right is None:
+					current.right = BST(value)
+					break
+				else:
+					current = current.right
+        return self
+
+    def contains(self, value):
+        current = self
+		while current is not None:
+			if value == current.value:
+				return True
+			elif value < current.value:
+				current = current.left
+			elif value > current.value:
+				current = current.right
+		return False
+
+
 * Sorting algorithms
 
 def bubbleSort(sort):
