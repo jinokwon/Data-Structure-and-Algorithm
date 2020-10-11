@@ -1,4 +1,3 @@
-# Data Structure and Algorithm
+# Data Structure and Algorithm (in Python/Javascript/C++)
 
 This repo is a log of my self-study in data structure and a couple of my solutions for coding interview questions.
-In Python/Javascript/C++.
