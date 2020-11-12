@@ -1,17 +1,3 @@
-[Concept Review]
-* Dictionary
-- Can have a list or a dictionary as a value of an item in a dictionary, but NO for keys of the dictionary ==> Will get a TypeError.
-
-* Array
-Static vs Dynamic array:
-- dynamic array : Python lists are all dynamic arrays, which means that they automatically manage memory (i.e., when inserting new elements).
-- static array : Like in C++ or Java, programmers should allocate and manage memory when making modifications to the array.
-
-* List vs Tuple
-- Lists are ordered and mutable ==> Python uses dynamic array by default (unlike in Java where static arrays can be used)
-- tuples are NOT mutable.
-
-
 * tree construction
 class BST:
     def __init__(self, value):
