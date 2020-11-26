@@ -1,4 +1,6 @@
-* tree construction
+Q) Linked List Construction
+
+Q) tree construction
 class BST:
     def __init__(self, value):
         self.value = value
@@ -103,8 +105,7 @@ def get_idx(array, current_idx):
 	return next_idx
 	
 ----------------------------------------------------------------------------------------------------
-06/25/2020 - Permutations
-[Question 8]
+Q) Permutations
 def Permutations(array):
 	permute = []
 	permute_helper(0, array, permute)
@@ -136,8 +137,7 @@ i = 1 -- array: [3, 2, 1]
 	j=1 --> i=2 - permut(3, 2, 1)
 	j=2 --> i=2 - permut(3, 1, 2)
 ----------------------------------------------------------------------------------------------------
-06/23/2020 - Write a function that takens in an array and returns all the possible subsets of it.
-[Question 7]
+Q) Write a function that takens in an array and returns all the possible subsets of it.
 def powerset(array):
 	subsets = [[]]
 	for element in array:
@@ -146,8 +146,7 @@ def powerset(array):
 			subsets.append(current_set + [element])
 	return subsets
 ----------------------------------------------------------------------------------------------------
-06/18/2020 - Find the sume of three numbers from an array that sum up to the given tager sum.
-[Question 6]
+Q) Find the sume of three numbers from an array that sum up to the given tager sum.
 def SumofThree(array, targetSum):
 	array.sort()
 	triple_list = []
@@ -167,8 +166,7 @@ def SumofThree(array, targetSum):
 	return triple_list
 
 ----------------------------------------------------------------------------------------------------
-06/17/2020 - Find three largest numbers from a list
-[Question 5]
+Q) Find three largest numbers from a list
 def findThreeLargestNumbers(array):
 	three_large = [None, None, None]
 	for num in array:
@@ -192,8 +190,7 @@ def update_helper(array, num, idx):
 
 
 ----------------------------------------------------------------------------------------------------
-06/13/2020
-[Question 3] Write a function that Finds a subsequence of an array
+Q) Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
 
 [ANS]
@@ -211,8 +208,7 @@ def caesar(string, key):
  			answer.append(num_dict[withKey-26])
  	return " ".join(answer)
 ----------------------------------------------------------------------------------------------------
-06/11/2020
-[Question 2] Write a function that Finds a subsequence of an array
+Q) Write a function that Finds a subsequence of an array
 (Ex) [1, 3, 5] is a subsequence of the array [-1, 1, 2, 3, 4, 5, 6]
 
 [ANS]
@@ -226,8 +222,7 @@ def is_sub(array, sequence):
  	# if the sequence index moved all the way to the last index ('len(sequence)'), it means 'sequence' is a subsequence.
  	return seq_idx == len(sequence)
 ----------------------------------------------------------------------------------------------------
-06/09/2020
-[Question 1] Write a function for the sum of two numbers
+Q) Write a function for the sum of two numbers
 input : (1) non-empty array of distinct integers and (2) a target sum
 return : any couple of numbers that sum up to the target sum.
 (return null if none)
